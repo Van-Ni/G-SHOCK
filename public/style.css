@@ -1,0 +1,507 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #111;
+    line-height: 1.15;
+}
+ul{
+    list-style: none;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  outline: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.headline,
+.products-support{
+    position: relative;
+    background: url(http://mauweb.monamedia.net/gwatch/wp-content/uploads/2018/11/black_background_metal.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.overlay{
+    background: rgba(0, 0, 0, 0.75);
+}
+#main{
+
+}
+
+#header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: #000;
+    z-index: 999;
+}
+
+#header #nav{
+    display: inline-block;
+}
+
+#header #nav, .subnav{
+    list-style-type: none;
+}
+
+#header #nav > li{
+    display: inline-block;
+}
+
+#header #nav li{
+    position: relative;
+}
+
+#header #nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+#header #nav li a{
+    text-decoration: none;
+    line-height: 60px;
+    padding: 0 13px;
+    display: block;
+}
+
+#header #nav li:hover .subnav{
+    display: block;
+}
+
+#header #nav > li:hover > a,
+#header #nav .subnav li:hover a{
+    color: #000;
+    background-color: #ccc;
+}
+
+#header #nav .subnav{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    background-color: #fff;
+    box-shadow: 0 0 7px #ccc;
+}
+
+#header #nav .subnav a{
+    color: #000;
+    padding: 0 24px;
+    line-height: 36px;
+}
+
+#header #nav .nav-arrow-down{
+    font-size: 10px;
+}
+/* search */
+.search {
+    width: 246px;
+    position: relative;
+    display: flex;
+    margin-bottom: 14px;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #fff;
+    border-right: none;
+    padding: 5px;
+    height: 35px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+  }
+  
+  .searchTerm:focus{
+    color: #00B4CC;
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+#header .ti-shopping-cart{
+    font-size: 25px;
+    padding: 10px 10px;
+    color: #fff;
+}
+.num-order{
+    color: #000;
+    background: #fff;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    top: -18px;
+    right: -12px;
+}
+ #slider{
+    min-height: 100%;
+    margin-top: 46px;
+    padding-top: 55%;
+    background: url('http://mauweb.monamedia.net/gwatch/wp-content/uploads/2018/11/banner-01.jpg') top center / cover no-repeat;
+}
+
+#slider .text-content{
+    position: absolute;
+    bottom: 325px;
+    left: 47px;
+}
+
+#slider .text-heading{
+    font-weight: 500;
+    font-size: 40px;
+    color: #f44336;
+}
+
+#slider .text-description{
+    font-size: 20px;
+    color:#fff;
+}
+
+/* body */
+.wrapper {
+    margin: 0 auto;
+    
+}
+
+/* Support */
+.products-support {
+}
+
+.products-support-item {
+    display: flex;
+    margin: 50px 50px;
+}
+
+.products-support-text {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-weight: 800;
+}
+
+.products-support-img {
+    width: 70px;
+    height: 70px;
+}
+
+.products-support-imgfree {
+    height: 55px;
+}
+
+
+/* Danh mục sản phẩm */
+.heading1::after {
+    position: absolute;
+    
+    top: 103%;
+    content: "\f017";
+    font-family: FontAwesome;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    line-height: 1;
+    color: #c82a36; 
+}
+
+.heading1 {
+    position: relative;
+    font-size: 26px;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+}
+
+
+.heading1::before {
+    position: absolute;
+    top: 115%;
+    content: '';
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 5px;
+    background: linear-gradient(to right,#2d3855 0%,#2d3855 30%,rgba(255,255,255,0) 30%,rgba(255,255,255,0) 67%,#2d3855 67%, #2d3855 100%);
+}
+
+.products {
+    display: flex;
+    margin: 80px 200px 0 200px;
+    list-style: none;
+    
+}
+
+.products-thumb-img {
+    margin-bottom: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+.products-item:hover .products-info {
+   background-color: rgb(65, 59, 59);
+   transform: scale(1.1);
+}
+
+.products-item:hover .products-thumb-img {
+    transform: scale(1.1);
+ }
+
+.products-info {
+    text-align: center;
+    line-height: 1.3;
+    margin: 0 8px;
+    padding: 15px 0;
+    transition: all 0.3s ease-in-out;
+   
+}
+
+.products-cat {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.products-amount {
+    text-decoration: none;
+    color: #fff;
+    font-weight: lighter;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+/* Sản phẩm giảm giá */
+.heading2::after {
+    position: absolute;
+    
+    top: 109%;
+    content: "\f017";
+    font-family: FontAwesome;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    line-height: 1;
+    color: #c82a36; 
+}
+
+.heading2 {
+    position: relative;
+    font-size: 26px;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+}
+
+
+.heading2::before {
+    position: absolute;
+    top: 110%;
+    content: '';
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 5px;
+    background: linear-gradient(to right,#2d3855 0%,#2d3855 30%,rgba(255,255,255,0) 30%,rgba(255,255,255,0) 67%,#2d3855 67%, #2d3855 100%);
+}
+
+
+.products-cat-discount {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.products-amount-discount {
+    text-decoration: none;
+    color: #fff;
+    font-weight: lighter;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.products-amount-cost {
+    font-size: 17px;
+    text-decoration: none;
+    color: #fff;
+    text-decoration-line: line-through;
+}
+
+.products-btn {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.products-btn-add {
+    padding: 10px;
+    font-weight: 800;
+    background-color: rgb(123, 122, 123);
+    color: #fff;
+}
+
+.products-btn-add:hover {
+    background-color: rgb(58, 57, 57);
+}
+/* Sản phẩm nổi bật */
+.heading3::after {
+    position: absolute;
+    top: 113%;
+    content: "\f017";
+    font-family: FontAwesome;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    line-height: 1;
+    color: #c82a36; 
+}
+
+.heading3 {
+    position: relative;
+    font-size: 26px;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+}
+
+
+.heading3::before {
+    position: absolute;
+    top: 130%;
+    content: '';
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 5px;
+    background: linear-gradient(to right,#2d3855 0%,#2d3855 30%,rgba(255,255,255,0) 30%,rgba(255,255,255,0) 67%,#2d3855 67%, #2d3855 100%);
+}
+
+/* swiper */
+
+.swiper-button-prev
+{
+    left: -1px !important;
+    color: #fff !important;
+}
+.swiper-button-next{
+    right: -3px !important;
+    color: #fff !important;
+
+}
+
+
+/* footer */
+.footer-basic {
+    padding:40px 0;
+    background-color:#ffffff;
+    color:#4b4c4d;
+    background: url(http://mauweb.monamedia.net/gwatch/wp-content/uploads/2018/11/footer-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:#fff;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#fff;
+    margin-bottom:0;
+  }
+  
